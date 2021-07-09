@@ -29,12 +29,13 @@ void takeAttendence(int StudentCode) {
 	struct tm ltm;
 	localtime_s(&ltm, &presentTime);
 
-	//declare ofstream for excel sheet
+	//declare output file stream for excel sheet
 	std::ofstream attendanceFile;
 
-	//std::stringStream for file
+	//declare stringStream for file
 	std::stringstream afss;
 
+	//convert time_t to ctime
 	ctime_s(timeString, sizeof timeString, &presentTime);
 
 	std::cout << "Student code : " << StudentCode << " | Time : " << timeString << std::endl;

@@ -28,7 +28,8 @@ int main()
 			std::cout << "Exiting ...";
 			return 0;
 		default:
-			return 0;
+			std::cout << "Enter a proper choice.\n";
+			system("pause");
 		}
 	}
 	return 0;
