@@ -5,6 +5,7 @@
 
 eigenface.yaml
 *.csv
+faces/
 
 # User-specific files
 *.rsuser

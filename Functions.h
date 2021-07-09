@@ -139,7 +139,7 @@ void addFace()
 	//char key;
 	int i = 0;
 
-	_mkdir(". /faces/");
+	_mkdir("./faces/");
 
 	for (;;)
 	{
