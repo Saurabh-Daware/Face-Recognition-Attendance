@@ -2,15 +2,13 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <direct.h>
 
-//include opencv core
-#include "opencv2\core\core.hpp"
-#include "opencv2\core.hpp"
+//include opencv
 #include "opencv2\face.hpp"
 #include "opencv2\highgui\highgui.hpp"
 #include "opencv2\objdetect\objdetect.hpp"
 #include "opencv2\opencv.hpp"
-#include <direct.h>
 
 
 cv::CascadeClassifier Cascade;
@@ -225,7 +223,7 @@ void  FaceRecognition() {
 
 	//lbpcascades/lbpcascade_frontalface.xml
 
-	std::string window = "Face Recognition Attendance";
+	std::string window = "Face Recognition Attendance___________________Press q to close this screen";
 
 	if (!Cascade.load(face_haarcascade_file)) {
 		std::cout << " \nError loading file\n" << std::endl;

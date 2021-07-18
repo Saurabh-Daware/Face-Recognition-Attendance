@@ -10,10 +10,10 @@ int main()
 	while (1) {
 		int choice;
 		system("cls");
-		std::cout << "1. Recognise Face\n";
-		std::cout << "2. Add Face\n";
-		std::cout << "3. Exit\n";
-		std::cout << "Choose One: ";
+		std::cout << "\t1. Recognise Face\n";
+		std::cout << "\t2. Add Face\n";
+		std::cout << "\t3. Exit\n\n";
+		std::cout << "\tChoose One: ";
 		std::cin >> choice;
 		switch (choice)
 		{
